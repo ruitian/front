@@ -1,4 +1,10 @@
 {% extends "base.html" %}
 {% block page_content %}
-<h1>Hello</h1>
+{% for commodity in commoditys %}
+    <img src="{{ url_for('static', filename='img/'+commodity.imglink) }}"/>
+    {{ commodity.title  }}
+    {{ commodity.description }}
+    {{ commodity.price }}
+    <br />
+{% endfor %}
 {% endblock %}
