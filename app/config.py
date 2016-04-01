@@ -14,7 +14,7 @@ class Config:
     SECRET_KEY = 'you-will-never-guess'
     CSRF_ENABLED = True
 
-    BASE_URL = 'http://lolcode.cn/v1'
+    BASE_URL = 'http://lolcode.cn:8000/v1'
 
     @staticmethod
     def init_app(app):
